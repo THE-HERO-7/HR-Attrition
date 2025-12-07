@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  
+<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ 
+<div class="login">
+	<h1>HR ATTRITION</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+ 
+   <form action="{{ url_for('predict')}}"method="post">
+    	
+		<input type="text" name="EmployeeNumber" placeholder="EmployeeNumber" required="required" />
+        <input type="text" name="AGE" placeholder="AGE" required="required" />
+        <input type="text" name="DAILY RATE" placeholder="DAILY RATE" required="required" />
+		<input type="text" name="DistanceFromHome" placeholder="DistanceFromHome" required="required" />
+		<input type="text" name="Education" placeholder="Education" required="required" />
+		<input type="text" class="hello" name="EducationField" placeholder="EducationField(0:Human Resource1:Life Science 2:Marketing 3:Medical 4:other 5:Technical Degree)" required="required" />
+        <input type="text" name="EnvironmentSatisfaction" placeholder="EnvironmentSatisfaction" required="required" />
+		<input type="text" name="HourlyRate" placeholder="HourlyRate" required="required" />
+		<input type="text" name="JobInvolvement" placeholder="JobInvolvement" required="required" />
+		<input type="text" name="JobLevel" placeholder="JobLevel" required="required" />
+        <input type="text"class="jb" name="JobRole" placeholder="JobRole (0:HealthCare Representative 1:Human Resources 2:Laboratory Techician 3:Manager 4:Manufacturing Director 5:Reasearch Director 6:Reasearch Scientist 7:Sales Executive 8:Sales Representative)" required="required" />
+		<input type="text" name="JobSatisfaction" placeholder="JobSatisfaction" required="required" />
+		<input type="text" name="MaritalStatus" placeholder="MaritalStatus (0:Divorced 1:Married 2:Single)" required="required" />
+		<input type="text" name="MonthlyIncome" placeholder="MonthlyIncome" required="required" />
+        <input type="text" name="MonthlyRate" placeholder="MonthlyRate" required="required" />
+		<input type="text" name="NumCompaniesWorked" placeholder="NumCompaniesWorked" required="required" />
+		<input type="text" name="OverTime" placeholder="OverTime(1:yes 0:no)" required="required" />
+		<input type="text" name="PercentSalaryHike" placeholder="PercentSalaryHike" required="required" />
+        <input type="text" name="RelationshipSatisfaction" placeholder="RelationshipSatisfaction" required="required" />
+		<input type="text" name="TotalWorkingYears" placeholder="TotalWorkingYears" required="required" />
+		<input type="text" name="WorkLifeBalance" placeholder="WorkLifeBalance" required="required" />
+		<input type="text" name="YearsAtCompany" placeholder="YearsAtCompany" required="required" /><br>
+        <input type="text" name="YearsInCurrentRole" placeholder="YearsInCurrentRole" required="required" />
+		<input type="text" name="YearsSinceLastPromotion" placeholder="YearsSinceLastPromotion" required="required" />
+		<input type="text" name="YearsWithCurrManager" placeholder="YearsWithCurrManager" required="required"/>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+  
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
