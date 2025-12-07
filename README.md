@@ -1,4 +1,4 @@
-# 🧠 HR Employee Attrition Analysis and Prediction
+# HR Employee Attrition Analysis and Prediction
 
 Trained and compared **Logistic Regression**, **SVM (Linear, Polynomial, RBF, Sigmoid)**, and **Decision Tree** models on the HR Employee Attrition dataset — achieving **88% accuracy** after **Decision Tree pruning (pre- and post-pruning)**.  
 This was my **first Machine Learning project**,which I built in first year as part of an **IIT Kanpur ML course**, where I explored end-to-end data cleaning, feature analysis, model evaluation, and Flask deployment.  
@@ -6,7 +6,7 @@ Further experiments and model improvements were added beyond the course scope.
 
 ---
 
-## 📊 Data Analysis and Preprocessing
+## Data Analysis and Preprocessing
 
 - Dataset used: **HR Employee Attrition.csv**
 - Loaded and analyzed dataset using **Pandas**, **NumPy**, and **Statsmodels**.
@@ -20,7 +20,7 @@ Further experiments and model improvements were added beyond the course scope.
 
 ---
 
-## 🔍 Statistical Analysis
+## Statistical Analysis
 
 - Performed **OLS regression** via **Statsmodels** to evaluate feature significance.
 - Identified strong predictors of attrition such as:
@@ -31,7 +31,7 @@ Further experiments and model improvements were added beyond the course scope.
 
 ---
 
-## 🤖 Model Development
+## Model Development
 
 Implemented and compared multiple models:
 
@@ -52,7 +52,7 @@ Implemented and compared multiple models:
 
 ---
 
-## 📈 Model Evaluation
+## Model Evaluation
 
 Evaluated models using:
 - **Confusion Matrix**
@@ -72,7 +72,7 @@ Evaluated models using:
 
 ---
 
-## 🧪 Testing and Validation
+## Testing and Validation
 
 - Verified predictions on unseen HR data.
 - Cross-checked consistency across multiple runs and pruning thresholds.
@@ -80,7 +80,7 @@ Evaluated models using:
 
 ---
 
-## 🧠 Insights
+## Insights
 
 - Employees with **low satisfaction**, **low income**, and **fewer promotions** showed the highest attrition probability.
 - **Pre-pruning** prevented overfitting early, while **post-pruning** fine-tuned the tree depth and complexity.
@@ -96,7 +96,7 @@ Evaluated models using:
 
 ---
 
-## ✅ Final Outcome
+## Final Outcome
 
 - Completed an **end-to-end ML pipeline**:
   1. EDA and outlier removal  
